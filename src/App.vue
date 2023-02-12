@@ -47,8 +47,7 @@ export default {
 }
 
 .header__logo__title {
-  font-size: 70
-  px;
+  font-size: 70px;
   font-weight: bold;
   margin-left: 10px;
 }
