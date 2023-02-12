@@ -1,20 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <header class="header">
+    <div class="header__logo">
+      <img src="../public/puntaicon.png" alt="Logo">
+      <h1 class="header__logo__title">Punta Pass</h1>
+    </div>
+  </header>
+  <TheHeader/>
+  <PuntaOffers/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PuntaOffers from './components/PuntaOffers.vue'
+import TheHeader from './components/TheHeader.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PuntaOffers,
+    TheHeader
   }
 }
 </script>
 
 <style>
+@import '~bootstrap/dist/css/bootstrap.css';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,5 +32,44 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo__title {
+  font-size: 70
+  px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav__item {
+  margin-left: 20px;
+}
+
+.header__nav__item a {
+  text-decoration: none;
+  color: inherit;
 }
 </style>
