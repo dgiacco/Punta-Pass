@@ -7,17 +7,20 @@
   </header>
   <TheHeader/>
   <PuntaOffers/>
+  <PuntaFooter/>
 </template>
 
 <script>
 import PuntaOffers from './components/PuntaOffers.vue'
 import TheHeader from './components/TheHeader.vue'
+import PuntaFooter from './components/PuntaFooter.vue'
 
 export default {
   name: 'App',
   components: {
     PuntaOffers,
-    TheHeader
+    TheHeader,
+    PuntaFooter
   }
 }
 </script>
