@@ -1,6 +1,6 @@
 <template>
     <div class="container my-5">
-      <h1 class="text-center">Discount Offers</h1>
+      <h1 class="text-center" style="color: #3f51b5;">Discount Offers</h1>
       <hr />
       <div class="row">
         <div class="col-md-4" v-for="offer in offers" :key="offer.title">
@@ -71,5 +71,10 @@
   }
   .card:hover {
     transform: scale(1.1);
+  }
+
+  .card-title {
+    font-weight: bold;
+    color: #3f51b5;
   }
   </style>

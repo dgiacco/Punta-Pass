@@ -1,10 +1,5 @@
 <template>
-  <header class="header">
-    <div class="header__logo">
-      <img src="../public/puntaicon.png" alt="Logo">
-      <h1 class="header__logo__title">Punta Pass</h1>
-    </div>
-  </header>
+  <PuntaNavBar/>
   <TheHeader/>
   <PuntaOffers/>
   <PuntaFooter/>
@@ -14,13 +9,15 @@
 import PuntaOffers from './components/PuntaOffers.vue'
 import TheHeader from './components/TheHeader.vue'
 import PuntaFooter from './components/PuntaFooter.vue'
+import PuntaNavBar from './components/PuntaNavBar.vue'
 
 export default {
   name: 'App',
   components: {
     PuntaOffers,
     TheHeader,
-    PuntaFooter
+    PuntaFooter,
+    PuntaNavBar
   }
 }
 </script>

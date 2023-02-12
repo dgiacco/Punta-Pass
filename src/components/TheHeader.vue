@@ -1,8 +1,9 @@
 <template>
-    <header class="header">
-      <h1 class="header__title">{{ title }}</h1>
-      <p class="header__subtitle">{{ subtitle }}</p>
-    </header>
+  <div class="appName">Punta Pass</div>
+  <header class="header">
+    <h1 class="header__title">{{ title }}</h1>
+    <p class="header__subtitle">{{ subtitle }}</p>
+  </header>
   </template>
   
   <script setup>
@@ -31,5 +32,12 @@
     font-size: 18px;
     font-weight: normal;
     opacity: 0.7;
+  }
+
+  .appName {
+    font-size: 40px;
+    color: #3f51b5;
+    background-color: #7eb3f3;
+    font-weight: bold;
   }
   </style>
